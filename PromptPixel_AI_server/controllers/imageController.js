@@ -4,7 +4,13 @@ import axios from "axios";
 
 const generateImage = async (req, res) => {
   try {
-    const { userId, prompt } = req.body;
+    // const { userId, prompt } = req.body;
+    const userId = req.user.id;
+    const {prompt} = req.body;
+
+    // console.log(userId);
+    // console.log(prompt);
+    
 
     const user = await userModel.findById(userId);
     if (!user || !prompt) {
@@ -17,6 +23,7 @@ const generateImage = async (req, res) => {
         creditBalance: user.creditBalance,
       });
     }
+
 
     const formData = new FormData();
     formData.append("prompt", prompt);
