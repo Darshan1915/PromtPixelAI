@@ -10,7 +10,13 @@ const app = express();
 dotenv.config();
 
 app.use(express.json());
-app.use(cors());
+
+// app.use(cors());
+app.use(cors({
+  origin: "https://promptpixelai.vercel.app", // ✅ your live frontend URL
+  credentials: true
+}));
+
 await connectDB();
 
 app.use('/api/user', userRouter)
