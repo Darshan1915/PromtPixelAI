@@ -19,20 +19,20 @@ const AppContextProvider = (props) => {
       const { data } = await axios.get( backendUrl + "/api/user/credits", {
         headers: { token },
       });
-      console.log(data);
-      console.log(token);
-      console.log(data.user);
+      // console.log(data);
+      // console.log(token);
+      // console.log(data.user);
       
       
       
       if (data.success) {
-        console.log(data);
+        // console.log(data);
         
         setCredit(data.credits);
         setUser(data.user);
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       toast.error(error.message);
     }
   };
@@ -52,7 +52,7 @@ const AppContextProvider = (props) => {
     }
 
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       toast.error(error.message);
     }
   }

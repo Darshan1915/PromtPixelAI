@@ -37,7 +37,6 @@ const Login = () => {
           password,
         });
         if (data.success) {
-          console.log("Ok")
           setToken(data.token);
           setUser(data.user);
           localStorage.setItem("token", data.token);
