@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between py-4">
       <Link to={"/"}>
-        <img src={assets.logo} className="w-28 sm:w-32 lg:w-40" />
+        <img src={assets.loogoo} className="w-36 sm:w-44 lg:w-52" />
       </Link>
       <div>
         {/* If user available */}

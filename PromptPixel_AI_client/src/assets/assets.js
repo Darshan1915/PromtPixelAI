@@ -1,4 +1,5 @@
 import logo from './logo.svg'
+import loogoo from './loogoo.svg'
 import logo_icon from './logo_icon.svg'
 import facebook_icon from './facebook_icon.svg'
 import instagram_icon from './instagram_icon.svg'
@@ -20,6 +21,7 @@ import credit_star from './credit_star.svg'
 import profile_icon from './profile_icon.png'
 
 export const assets = {
+    loogoo,
     logo,
     logo_icon,
     facebook_icon,
